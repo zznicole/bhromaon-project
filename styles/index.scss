@@ -123,6 +123,7 @@
 .menuwrapper {
     width: 100%;
     max-height: 83px;
+    padding: 2rem;
     background-color: $primary-color;
     color: $font1-color;
     display: flex;
@@ -156,7 +157,7 @@
             color: $font1-color;
 
             &:hover {
-                color: $primary-color;
+                color: $bg1-color;
             }
         }
     }
