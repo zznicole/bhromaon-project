@@ -1,3 +1,117 @@
 @import 'overwrites';
 @import 'fonts';
 @import 'colors';
+
+.screen {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.header {
+    width: 100%;
+    height: 737px;
+    background-image: url(../images/header-image.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+    &__headline {
+        width: 37%;
+        max-height: 187px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+        
+        &--h1 {
+            font-family: $primary-font-family;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 0.6;
+            text-align: center;
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+            color: $font1-color;
+        }
+
+        &--h3 {
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 1.2;
+            text-align: center;
+            letter-spacing: 6.82px;
+            color: $font1-color;
+        }
+ 
+        &--searchbar {
+            display: flex;
+            width: 100%;
+            max-height: 63px;
+            position: relative;
+            background-color: $font1-color;
+
+            &::placeholder {
+                font-family: $primary-font-family;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 0.9rem;
+                line-height: 1.9;
+                text-align: center;
+                letter-spacing: 2.8px;
+                color: $placeholder-color;
+            }
+
+            &--button {
+                width: 23%;
+                max-height: 63px;
+                background-color: $primary-color;
+                border: 2px solid #FFFFFF;
+                position: absolute;
+                right: 0;
+
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: $placeholder-color;
+                }
+            }
+        }
+        
+    }
+
+    &__scrolldown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $font1-color;
+
+        &--title {
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 0.9rem;
+            line-height: 1.9;
+            text-align: center;
+            letter-spacing: 2.8px;
+            color: $font1-color;
+        }
+
+        &--icon {
+
+            &:hover {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.menuwrapper {
+    width: 100%;
+    background-color: $primary-color;
+    color: $font1-color;
+}
