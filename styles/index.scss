@@ -11,7 +11,7 @@
     letter-spacing: 2.4px;
     text-transform: uppercase;
     color: $font1-color;
-    }
+}
 
 %content {
     font-family: $primary-font-family;
@@ -21,7 +21,26 @@
     line-height: 1.6;
     letter-spacing: 1.6px;
     color: $font2-color;
+}
+
+%button {
+    background-image: url(../images/buttonbg.png);
+    width: 228px;
+    height: 63px;
+    font-family: $secondary-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: $font1-color;
+    
+    &:hover {
+        transform: scale(1.1);
+        background-color: $placeholder-color;
     }
+}
 
 .screen {
     width: 100%;
@@ -212,6 +231,10 @@
     &__content {
         @extend %content;
     }
+
+    &__button {
+        @extend %button;
+    }
 }
 
 .whychooseus__image1 {
@@ -224,4 +247,19 @@
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+@media screen and (max-width: 1320px) { 
+    .whychooseuswrapper2 {
+    flex-wrap: wrap;
+    }
+}
+
+.howitworks {
+    width: 100%;
+    padding: 3em;
+    background-color: $bg1-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
